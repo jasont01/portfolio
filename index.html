@@ -1,18 +1,161 @@
 <!doctype html>
 
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
 
-  <title>Title</title>
-  <meta name="description" content="HTML Template">
+  <title>Jason Thompson | Portfolio</title>
+  <meta name="description" content="Portfolio website for Jason Thompson">
   <meta name="author" content="jason@jasont.us">
+  <meta name="viewport" content="width=device-width">
 
-  <link rel="stylesheet" href="css/style.css?ver=1.0">
-
+  <link rel="stylesheet" href="css/portfolio.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
+  <script src="js/portfolio.js"></script>
+  <script src="https://kit.fontawesome.com/22f61d7fe5.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-  <script src="js/script.js"></script>
+  <div class="content">
+    <h1>Jason Thompson | Portfolio</h1>
+
+    <!--navbar-->
+    <div class="navbar" id="navbar">
+      <nav>
+        <a href="index.html" class="active"><i class="fas fa-angle-double-right"></i>Home</a>
+        <a href="github.html">GitHub</a>
+        <a href="projects.html">Projects</a>
+        <a href="skills.html">Skills</a>
+        <a href="resume.html">Resume</a>
+        <a href="contact.html">Contact</a>
+        <a href="social.html">Social</a>
+        <a href="javascript:void(0);" class="icon" onclick="myToggle()"><i class="fas fa-bars"></i></a>
+      </nav>
+    </div>
+    <!--end navbar-->
+
+    <main>
+
+      <!-- **FIX ME**  Replace <br>'s with css -->
+      <div class="card">
+        <a href="github.html">
+          <div class="flip-card cards">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <br /><br />
+                <i class="fab fa-github"></i>
+                <h2>GitHub</h2>
+              </div>
+              <div class="flip-card-back">
+                <br> <br>
+                <h3>Check out my GitHub profile.</h3>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="card">
+        <a href="projects.html">
+          <div class="flip-card cards">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <br /><br />
+                <i class="fas fa-terminal"></i>
+                <h2>Projects</h2>
+              </div>
+              <div class="flip-card-back">
+                <br> <br>
+                <h3>See my favorite projects.</h3>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="card">
+        <a href="skills.html">
+          <div class="flip-card cards">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <br /><br />
+                <i class="fas fa-check-square"></i>
+                <h2>Skills</h2>
+              </div>
+              <div class="flip-card-back">
+                <br> <br>
+                <h3>See my skills.</h3>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="card">
+        <a href="resume.html">
+          <div class="flip-card cards">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <br /><br />
+                <i class="fas fa-file-alt"></i>
+                <h2>Resume</h2>
+              </div>
+              <div class="flip-card-back">
+                <br> <br>
+                <h3>Check out my resume.</h3>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="card">
+        <a href="contact.html">
+          <div class="flip-card cards">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <br /><br />
+                <i class="far fa-address-card"></i>
+                <h2>Contact</h2>
+              </div>
+              <div class="flip-card-back">
+                <br> <br>
+                <h3>Get in touch with me.</h3>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="card">
+        <a href="social.html">
+          <div class="flip-card cards">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <br /><br />
+                <i class="fab fa-linkedin"></i>
+                <h2>Social</h2>
+              </div>
+              <div class="flip-card-back">
+                <br> <br>
+                <h3>Reach me via social media.</h3>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      <a href="#"><i class="fas fa-arrow-up"></i></a>
+
+    </main>
+
+    <div class="footer">
+      <footer>
+        <p id="copyleft"></p>
+      </footer>
+    </div>
+  </div>
 </body>
+
 </html>

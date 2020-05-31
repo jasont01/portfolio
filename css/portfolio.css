@@ -1,0 +1,284 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #b4b4b4;
+  font-family: "Montserrat Alternates", sans-serif, "Segoe UI", Tahoma, Geneva,
+    Verdana, sans-serif !important;
+  font-size: 3vh !important;
+}
+
+h1 {
+  background-color: #b4b4b4;
+  color: #003333 !important;
+  text-shadow: 0 0 5px #008b8b !important;
+  color: #000000;
+  font-family: "Orbitron", sans-serif !important;
+  padding: 10px !important;
+  margin: 0;
+  font-size: 5vh !important;
+  text-align: center;
+  overflow: hidden;
+}
+
+ul li {
+  list-style: none;
+}
+
+.navbar {
+  background-color: #008b8b;
+  color: #ffffff;
+  overflow: hidden;
+  text-align: center;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #ffffff;
+  padding: 10px;
+  display: block;
+  float: left;
+}
+
+.navbar a:hover {
+  background-color: #00cece;
+  color: #00447c;
+  cursor: pointer;
+}
+
+.navbar a.active {
+  background-color: #003333;
+  color: #ffffff;
+}
+
+.navbar .icon {
+  display: none;
+}
+
+main:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+main,
+main > .card {
+  padding: 10px;
+}
+
+.content {
+  max-width: 60%;
+  margin: auto;
+}
+
+.card {
+  float: left;
+  width: 33%;
+}
+
+.card-half {
+  float: left;
+  width: 40%;
+}
+
+main > .card-full {
+  padding: 10px;
+  width: 100%;
+}
+
+.card-full img {
+  width: 50%;
+}
+
+.cards {
+  text-align: center;
+  background-color: #ffffff;
+  box-shadow: 2px 8px 6px #888888;
+}
+
+.text-wrapper {
+  width: 80%;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 100%;
+  height: 300px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #ffffff;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #345050;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+.fa-arrow-up {
+  float: right;
+  background-color: #008b8b;
+  color: #ffffff;
+  border-radius: 50px;
+  visibility: hidden;
+}
+
+.footer footer {
+  background-color: #003333;
+  color: #ffffff;
+  font-size: 2.2vh;
+  text-align: center;
+  padding: 10px;
+}
+
+.content a {
+  color: black;
+  text-decoration: none;
+}
+
+iframe {
+  width: 75%;
+}
+
+@media only screen and (max-width: 1900px) {
+  body {
+    font-size: 3.5vh;
+  }
+  h1 {
+    font-size: 4vh;
+    padding: 0px;
+  }
+  .content {
+    max-width: 100%;
+    margin: 0;
+  }
+  .navbar a:not(:first-child) {
+    display: none;
+  }
+  .navbar a.icon {
+    float: right;
+    display: block;
+  }
+  .navbar.responsive {
+    position: relative;
+  }
+  .navbar.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .navbar.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .card {
+    width: 50%;
+  }
+  .card-half {
+    width: 50%;
+  }
+  main > .card-full {
+    padding: 10px;
+    width: 100%;
+  }
+  .card-full img {
+    width: 100%;
+  }
+  main,
+  main > .card {
+    padding: 2px;
+  }
+  .fa-arrow-up {
+    visibility: visible;
+  }
+  .cards:last-child {
+    box-shadow: none;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  body {
+    font-size: 3.5vh;
+  }
+  h1 {
+    font-size: 4vh;
+    padding: 0px;
+  }
+  .content {
+    max-width: 100%;
+    margin: 0;
+  }
+  .navbar a:not(:first-child) {
+    display: none;
+  }
+  .navbar a.icon {
+    float: right;
+    display: block;
+  }
+  .navbar.responsive {
+    position: relative;
+  }
+  .navbar.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .navbar.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .card {
+    width: 100%;
+  }
+  .card-onethird {
+    width: 100%;
+  }
+  .card-half {
+    width: 100%;
+  }
+  .card-full {
+    width: 100%;
+  }
+  .card-full img {
+    width: 100%;
+  }
+  main,
+  main > .card {
+    padding: 2px;
+  }
+  .fa-arrow-up {
+    visibility: visible;
+  }
+  div.gallery {
+    width: 100%;
+  }
+}
