@@ -41,7 +41,7 @@ h2 {
 }
 
 .content a {
-  color: black;
+  color: var(--secondary-color);
   text-decoration: none;
 }
 
@@ -132,12 +132,12 @@ ul li {
   font-size: 1.3rem;
 }
 
-.btn {
+/* .btn {
   display: inline-block;
   border: none;
-  background: var(--primary-color);
+  background: var(--background-color);
   color: #fff;
-  padding: 0.75rem 1.5rem;
+  padding: 0.50rem 1rem;
   margin-top: 1rem;
   transition: opacity 1s ease-in-out;
   text-decoration: none;
@@ -145,6 +145,21 @@ ul li {
 
 .btn:hover {
   opacity: 0.7;
+} */
+
+.hvr-fade {
+  display: inline-block;
+  padding: .5rem 1rem;
+  vertical-align: middle;
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  overflow: hidden;
+  transition-duration: 0.3s;
+  transition-property: color, background-color;
+}
+.hvr-fade:hover, .hvr-fade:focus, .hvr-fade:active {
+  background-color: var(--secondary-color);
+  color: white;
 }
 
 /* Footer */
