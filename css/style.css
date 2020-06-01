@@ -65,7 +65,8 @@ ul li {
   float: left;
 }
 
-.navbar li a {
+.navbar li a,
+.navbar li div {
   display: block;
   color: #ffffff;
   text-align: center;
@@ -81,7 +82,7 @@ ul li {
   cursor: pointer;
 }
 
-.navbar a.active {
+.navbar .active {
   background-color: var(--primary-color);
 }
 
@@ -186,7 +187,15 @@ ul li {
     margin: 0;
   }
 
-  .navbar ul li:not(:first-child) {
+  /* .navbar ul li:not(:first-child) {
     display: none;
+  } */
+
+  .navbar ul li a {
+    display: none;
+  }
+  
+  .navbar ul li div {
+    padding-left: 70px;
   }
 }
