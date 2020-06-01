@@ -78,11 +78,20 @@ main > .right {
   color: black;
 }
 
+.flip-card-front img {
+  height: 300px;
+}
+
 .flip-card-back {
-  /* background-color: #345050; */
+  padding: .5em;
   background-color: var(--overlay-color);
   color: white;
   transform: rotateY(180deg);
+}
+
+.flip-card-back h3 {
+  padding-top: 1em;
+  padding-bottom: 1em;
 }
 
 @media only screen and (max-width: 1600px) {
