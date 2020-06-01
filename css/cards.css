@@ -78,6 +78,10 @@ main > .right {
   color: black;
 }
 
+.flip-card-front i {
+  padding-top: 2em;
+}
+
 .flip-card-front img {
   height: 300px;
 }
