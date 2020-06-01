@@ -18,6 +18,7 @@ main > .card {
 main > .card-full {
   padding: 10px;
   width: 100%;
+  padding-bottom: 1em;
 }
 
 main > .header {
@@ -26,8 +27,12 @@ main > .header {
 
 main > .card-half {
   padding: 10px;
-  width: 50%;
+  width: 49%;
   float: left;
+}
+
+main > .right {
+  float: right;
 }
 
 .card-full img {
