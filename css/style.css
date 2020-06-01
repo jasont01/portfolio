@@ -77,8 +77,7 @@ ul li {
 }
 
 .navbar li a:hover {
-  background-color: var(--overlay-color);
-  color: #00447c;
+  background-color: var(--primary-color);
   cursor: pointer;
 }
 
