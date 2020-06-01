@@ -2,7 +2,7 @@
   --primary-color: rgba(13, 110, 139, 0.75);
   --secondary-color: rgba(24, 39, 51);
   --overlay-color: rgba(24, 39, 51, 0.85);
-  --background-color: #b4b4b4;
+  --background-color: rgb(47, 47, 47);
   --menu-speed: 0.75s;
 }
 
@@ -21,7 +21,7 @@ body {
 
 h1 {
   background-color: var(--background-color);
-  color: #003333 !important;
+  color: #cacaca !important;
   font-family: "Cinzel" !important;
   padding: 10px !important;
   margin: 0;

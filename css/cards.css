@@ -20,13 +20,24 @@ main > .card-full {
   width: 100%;
 }
 
-.card-full img {
+main > .header {
+  margin-bottom: 10px;
+}
+
+main > .card-half {
+  padding: 10px;
   width: 50%;
+  float: left;
+}
+
+.card-full img {
+  width: 33%;
+  margin: 30px;
 }
 
 .cards {
   text-align: center;
-  background-color: #ffffff;
+  background-color: var(--primary-color);
 }
 
 .flip-card {
