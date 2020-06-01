@@ -1,13 +1,3 @@
-//Toggle hamburger menu for mobile devices
-function myToggle(){
-    let myLinks = document.getElementById("navbar");
-    if (myLinks.className === "navbar"){
-        myLinks.className += " responsive";
-    } else {
-        myLinks.className = "navbar";
-    }
-}
-
 //Dynamic copyright year
 window.onload = function myDate(){
     let myDate = new Date();

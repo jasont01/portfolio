@@ -10,9 +10,12 @@
   <meta name="author" content="jason@jasont.us">
   <meta name="viewport" content="width=device-width">
 
-  <link rel="stylesheet" href="css/portfolio.css">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/menu.css">
+  <link rel="stylesheet" href="css/cards.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Montserrat+Alternates:wght@700&family=Roboto:wght@700&display=swap"
+    rel="stylesheet">
   <script src="js/portfolio.js"></script>
   <script src="https://kit.fontawesome.com/22f61d7fe5.js" crossorigin="anonymous"></script>
 </head>
@@ -22,37 +25,60 @@
     <h1>Jason Thompson | Portfolio</h1>
 
     <!--navbar-->
-    <div class="navbar" id="navbar">
-      <nav>
-        <a href="index.html">Home</a>
-        <a href="github.html">GitHub</a>
-        <a href="projects.html">Projects</a>
-        <a href="skills.html">Skills</a>
-        <a href="resume.html"></i>Resume</a>
-        <a href="contact.html">Contact</a>
-        <a href="social.html" class="active"><i class="fas fa-angle-double-right"></i>Social</a>
-        <a href="javascript:void(0);" class="icon" onclick="myToggle()"><i class="fas fa-bars"></i></a>
-      </nav>
+    <div>
+      <!-- Hamburger Menu -->
+      <div class="menu-wrap">
+        <input type="checkbox" class="toggler">
+        <div class="hamburger">
+          <div></div>
+        </div>
+        <div class="menu">
+          <div>
+            <div>
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="github.html">GitHub</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="social.html">Social</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="navbar">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="github.html">GitHub</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="skills.html">Skills</a></li>
+          <li><a href="resume.html">Resume</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="social.html" class="active">Social</a></li>
+        </ul>
+      </div>
+
     </div>
     <!--end navbar-->
 
     <main>
 
-      <div class="cards">
-        <div class="card-full content">
-          <br />
-          <h2>Social</h2>
-          <br />
-          <ul>
-            <li><a href="https://www.linkedin.com/in/jasont01"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
-            <li><a href="https://www.instagram.com/jasont01"><i class="fab fa-instagram"></i> Instagram</a></li>
-            <li><a href="https://www.twitter.com/jasont01"><i class="fab fa-twitter"></i> Twitter</a></li>
-            <li><a href="https://github.com/jasont01"><i class="fab fa-github"></i> GitHub</a></li>
-          </ul>
-            <a href="https://github.com/jasont01">
-              <img src="../img/qr-code-github.png" alt="QR Code for my GitHub profile." title="QR-Code for GitHub">
-            </a>
-        </div>
+      <div class="card-full cards">
+        <br />
+        <h2>Social</h2>
+        <br />
+        <ul>
+          <li><a href="https://www.linkedin.com/in/jasont01"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+          <li><a href="https://www.instagram.com/jasont01"><i class="fab fa-instagram"></i> Instagram</a></li>
+          <li><a href="https://www.twitter.com/jasont01"><i class="fab fa-twitter"></i> Twitter</a></li>
+          <li><a href="https://github.com/jasont01"><i class="fab fa-github"></i> GitHub</a></li>
+        </ul>
+        <a href="https://github.com/jasont01">
+          <img src="img/qr-code-github.png" alt="QR Code for my GitHub profile." title="QR-Code for GitHub">
+        </a>
       </div>
 
     </main>

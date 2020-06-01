@@ -10,9 +10,12 @@
   <meta name="author" content="jason@jasont.us">
   <meta name="viewport" content="width=device-width">
 
-  <link rel="stylesheet" href="css/portfolio.css">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/menu.css">
+  <link rel="stylesheet" href="css/cards.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Montserrat+Alternates:wght@700&family=Roboto:wght@700&display=swap"
+    rel="stylesheet">
   <script src="js/portfolio.js"></script>
   <script src="https://kit.fontawesome.com/22f61d7fe5.js" crossorigin="anonymous"></script>
 </head>
@@ -22,21 +25,54 @@
     <h1>Jason Thompson | Portfolio</h1>
 
     <!--navbar-->
-    <div class="navbar" id="navbar">
-      <nav>
-        <a href="index.html" class="active"><i class="fas fa-angle-double-right"></i>Home</a>
-        <a href="github.html">GitHub</a>
-        <a href="projects.html">Projects</a>
-        <a href="skills.html">Skills</a>
-        <a href="resume.html">Resume</a>
-        <a href="contact.html">Contact</a>
-        <a href="social.html">Social</a>
-        <a href="javascript:void(0);" class="icon" onclick="myToggle()"><i class="fas fa-bars"></i></a>
-      </nav>
+    <div>
+      <!-- Hamburger Menu -->
+      <div class="menu-wrap">
+        <input type="checkbox" class="toggler">
+        <div class="hamburger">
+          <div></div>
+        </div>
+        <div class="menu">
+          <div>
+            <div>
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="github.html">GitHub</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="social.html">Social</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="navbar">
+        <ul>
+          <li><a href="#" class="active">Home</a></li>
+          <li><a href="github.html">GitHub</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="skills.html">Skills</a></li>
+          <li><a href="resume.html">Resume</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="social.html">Social</a></li>
+        </ul>
+      </div>
+
     </div>
     <!--end navbar-->
 
     <main>
+
+      <header class="showcase">
+        <div class="container showcase-inner">
+          <h2>Welcome</h2>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id, mollitia minus? Consequuntur magnam sequi
+            provident corrupti! Autem doloremque deserunt nemo!</p>
+        </div>
+      </header>
 
       <!-- **FIX ME**  Replace <br>'s with css -->
       <div class="card">
@@ -146,7 +182,7 @@
           </div>
         </a>
       </div>
-      <a href="#"><i class="fas fa-arrow-up"></i></a>
+      <!-- <a href="#"><i class="fas fa-arrow-up"></i></a> -->
 
     </main>
 

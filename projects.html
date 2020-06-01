@@ -1,18 +1,21 @@
-<!doctype html>
+<!DOCTYPE html>
 
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
+  <meta charset="utf-8" />
 
   <title>Jason Thompson | Portfolio</title>
-  <meta name="description" content="Portfolio website for Jason Thompson">
-  <meta name="author" content="jason@jasont.us">
-  <meta name="viewport" content="width=device-width">
+  <meta name="description" content="Portfolio website for Jason Thompson" />
+  <meta name="author" content="jason@jasont.us" />
+  <meta name="viewport" content="width=device-width" />
 
-  <link rel="stylesheet" href="css/portfolio.css">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/menu.css" />
+  <link rel="stylesheet" href="css/cards.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Montserrat+Alternates:wght@700&family=Roboto:wght@700&display=swap"
+    rel="stylesheet" />
   <script src="js/portfolio.js"></script>
   <script src="https://kit.fontawesome.com/22f61d7fe5.js" crossorigin="anonymous"></script>
 </head>
@@ -22,31 +25,51 @@
     <h1>Jason Thompson | Portfolio</h1>
 
     <!--navbar-->
-    <div class="navbar" id="navbar">
-      <nav>
-        <a href="index.html">Home</a>
-        <a href="github.html">GitHub</a>
-        <a href="projects.html" class="active"><i class="fas fa-angle-double-right"></i>Projects</a>
-        <a href="skills.html">Skills</a>
-        <a href="resume.html">Resume</a>
-        <a href="contact.html">Contact</a>
-        <a href="social.html">Social</a>
-        <a href="javascript:void(0);" class="icon" onclick="myToggle()"><i class="fas fa-bars"></i></a>
-      </nav>
+    <div>
+      <!-- Hamburger Menu -->
+      <div class="menu-wrap">
+        <input type="checkbox" class="toggler" />
+        <div class="hamburger">
+          <div></div>
+        </div>
+        <div class="menu">
+          <div>
+            <div>
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="github.html">GitHub</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="social.html">Social</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="navbar">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="github.html">GitHub</a></li>
+          <li><a href="projects.html" class="active">Projects</a></li>
+          <li><a href="skills.html">Skills</a></li>
+          <li><a href="resume.html">Resume</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="social.html">Social</a></li>
+        </ul>
+      </div>
     </div>
     <!--end navbar-->
 
     <main>
-
-      <div class="cards">
-        <div class="card-full content">
-          <br />
-          <h2>Projects</h2>
-          <br />
-          <p>COMMING SOON</p>
-        </div>
+      <div class="card-full cards">
+        <br />
+        <h2>Projects</h2>
+        <br />
+        <p>COMMING SOON</p>
       </div>
-
     </main>
 
     <div class="footer">
