@@ -14,11 +14,11 @@ const Projects = ({ isDesktop }) => {
       <Container>
         <div className='project-wrapper'>
           <Title title='Projects' />
-          {projects.map((project) => {
+          {projects.map((project, idx) => {
             const { title, info, info2, url, repo, img, id } = project;
-
+            const direction = idx % 2 ? 'row-reverse' : 'unset';
             return (
-              <Row key={id}>
+              <Row key={id} style={{ flexDirection: direction }}>
                 <Col lg={4} sm={12}>
                   <Fade
                     left={isDesktop}
@@ -89,7 +89,7 @@ const Projects = ({ isDesktop }) => {
                           }}
                         >
                           <div data-tilt className='thumbnail rounded'>
-                        <ProjectImg alt={title} filename={img} />
+                            <ProjectImg alt={title} filename={img} />
                           </div>
                         </Tilt>
                       </a>
