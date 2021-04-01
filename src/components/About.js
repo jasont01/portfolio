@@ -2,7 +2,6 @@ import React, { useContext } from 'react';
 import Fade from 'react-reveal/Fade';
 import { Container, Row, Col } from 'react-bootstrap';
 import Title from './Title';
-//import AboutImg from '../Image/AboutImg';
 import { StaticImage } from 'gatsby-plugin-image'
 import PortfolioContext from '../context';
 
@@ -18,7 +17,7 @@ const About = ({ isDesktop }) => {
           <Col md={6} sm={12}>
             <Fade bottom duration={1000} delay={600} distance='30px'>
               <div className='about-wrapper__image'>
-                <StaticImage src={`../images/profile.jpg`} alt="profile picture" />
+                <StaticImage src={`../images/profile.jpg`} width={350} alt="profile" />
               </div>
             </Fade>
           </Col>
