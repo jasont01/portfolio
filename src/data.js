@@ -3,7 +3,8 @@ import { nanoid } from 'nanoid';
 // HERO DATA
 export const heroData = {
   title: '',
-  name: 'Jason',
+  firstName: 'Jason',
+  lastName: 'Thompson',
   subtitle: '',
   cta: '',
 };
@@ -76,30 +77,43 @@ export const skillsData = [
 export const projectsData = [
   {
     id: nanoid(),
-    img: 'project.jpg',
-    title: '',
-    info: '',
-    info2: '',
-    url: '',
-    repo: '', // if no repo, the button will not show up
+    img: 'todo-list.png',
+    title: 'To-Do List',
+    info: 'The ubiquitous javascript app',
+    info2: 'Inspired by the background picture found on unsplash',
+    url: 'https://jasont01.github.io/todo-list',
+    repo: 'https://github.com/jasont01/todo-list', // if no repo, the button will not show up
+    footnote: '',
   },
   {
     id: nanoid(),
-    img: 'project.jpg',
-    title: '',
-    info: '',
+    img: 'memory-game.png',
+    title: 'Memory Game',
+    info: 'A simple memory based game',
     info2: '',
-    url: '',
-    repo: '', // if no repo, the button will not show up
+    url: 'https://jasont01.github.io/memory-game/',
+    repo: 'https://github.com/jasont01/memory-game',
+    footnote: '',
   },
   {
     id: nanoid(),
-    img: 'project.jpg',
-    title: '',
-    info: '',
+    img: 'fauxbook.png',
+    title: 'Fauxbook',
+    info: 'A Facebook Clone',
     info2: '',
-    url: '',
-    repo: '', // if no repo, the button will not show up
+    url: 'https://odin-fauxbook.herokuapp.com/',
+    repo: 'https://github.com/jasont01/odin-facebook',
+    footnote: 'may take a moment to load. hosted on heroku using their hobby plan',
+  },
+  {
+    id: nanoid(),
+    img: 'odin-airlines.png',
+    title: 'Odin Airlines',
+    info: 'A mock flight booking app',
+    info2: 'Created with Ruby on Rails',
+    url: 'https://odin-airlines.herokuapp.com/',
+    repo: 'https://github.com/jasont01/odin-flight-booker',
+    footnote: 'may take a moment to load. hosted on heroku using their hobby plan',
   },
 ];
 
@@ -115,8 +129,8 @@ export const footerData = {
   networks: [
     {
       id: nanoid(),
-      name: 'twitter',
-      url: 'https://twitter.com/jasont01',
+      name: 'github',
+      url: 'https://github.com/jasont01',
     },
     {
       id: nanoid(),
@@ -130,8 +144,8 @@ export const footerData = {
     },
     {
       id: nanoid(),
-      name: 'github',
-      url: 'https://github.com/jasont01',
+      name: 'twitter',
+      url: 'https://twitter.com/jasont01',
     },
   ],
 };

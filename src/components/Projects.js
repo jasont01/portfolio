@@ -1,6 +1,5 @@
 import React, { useContext } from 'react';
 import Fade from 'react-reveal/Fade';
-import Tilt from 'react-tilt';
 import { Container, Row, Col } from 'react-bootstrap';
 import PortfolioContext from '../context';
 import Title from './Title';
@@ -15,7 +14,7 @@ const Projects = ({ isDesktop }) => {
         <div className='project-wrapper'>
           <Title title='Projects' />
           {projects.map((project, idx) => {
-            const { title, info, info2, url, repo, img, id } = project;
+            const { title, info, info2, url, repo, img, id, footnote } = project;
             const direction = idx % 2 ? 'row-reverse' : 'unset';
             return (
               <Row key={id} style={{ flexDirection: direction }}>
@@ -41,7 +40,7 @@ const Projects = ({ isDesktop }) => {
                       <a
                         target='_blank'
                         rel='noopener noreferrer'
-                        className='cta-btn cta-btn--hero'
+                        className='cta-btn'
                         href={url || '#!'}
                       >
                         See Live
@@ -51,13 +50,14 @@ const Projects = ({ isDesktop }) => {
                         <a
                           target='_blank'
                           rel='noopener noreferrer'
-                          className='cta-btn text-color-main'
+                          className='cta-btn ml-3'
                           href={repo}
                         >
                           Source Code
                         </a>
                       )}
                     </div>
+                    {footnote && <div className="footnote">{footnote}</div>}
                   </Fade>
                 </Col>
                 <Col lg={8} sm={12}>
@@ -69,30 +69,9 @@ const Projects = ({ isDesktop }) => {
                     distance='30px'
                   >
                     <div className='project-wrapper__image'>
-                      <a
-                        href={url || '#!'}
-                        target='_blank'
-                        aria-label='Project Link'
-                        rel='noopener noreferrer'
-                      >
-                        <Tilt
-                          options={{
-                            reverse: false,
-                            max: 8,
-                            perspective: 1000,
-                            scale: 1,
-                            speed: 300,
-                            transition: true,
-                            axis: null,
-                            reset: true,
-                            easing: 'cubic-bezier(.03,.98,.52,.99)',
-                          }}
-                        >
-                          <div data-tilt className='thumbnail rounded'>
-                            <ProjectImg alt={title} filename={img} />
-                          </div>
-                        </Tilt>
-                      </a>
+                      <div className={`thumbnail ${direction}`}>
+                        <ProjectImg alt={title} filename={img} />
+                      </div>
                     </div>
                   </Fade>
                 </Col>

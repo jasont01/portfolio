@@ -1,6 +1,6 @@
 #projects {
-  background: $white-color;
-  color: $dark-blue-text;
+  background: $black-color;
+  color: $white-color;
   margin-top: -15rem;
   padding-top: 15rem;
 
@@ -45,7 +45,7 @@
       }
 
       & p > a {
-        color: $secondary-color;
+        color: $highlight-color;
       }
     }
 
@@ -63,13 +63,25 @@
         box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
         transition: all 0.2s ease-out;
         box-shadow: 0 6px 10px rgba(0, 0, 0, 0.08), 0 0 6px rgba(0, 0, 0, 0.05);
-        transition: 0.5s transform cubic-bezier(0.155, 1.105, 0.295, 1.12), 0.5s box-shadow,
+        transition: 0.5s transform cubic-bezier(0.155, 1.105, 0.295, 1.12),
+          0.5s box-shadow,
           0.5s -webkit-transform cubic-bezier(0.155, 1.105, 0.295, 1.12);
+        // clip-path: inset(0 0 0 0 round 0 10% 0 10%);
+        clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
+        @include respond(tab-port) {
+          clip-path: unset;
+        }
 
         @include respond(phone) {
-          border: 1px solid #d2d2d2;
-          box-shadow: none;
+          // box-shadow: none;
           margin-bottom: 3.2rem;
+        }
+      }
+
+      & .row-reverse {
+        clip-path: polygon(0% 0%, 90% 0%, 100% 100%, 10% 100%);
+        @include respond(tab-port) {
+          clip-path: unset;
         }
       }
     }

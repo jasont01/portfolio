@@ -23,6 +23,7 @@ a:hover {
 }
 
 .section-title {
+  color: $highlight-color;
   margin: 0px;
   margin-bottom: 4.5rem;
   font-size: $big-font-size;
@@ -34,12 +35,13 @@ a:hover {
   }
 }
 
-.dark-blue-text {
-  color: $dark-blue-text !important;
+.highlight-color {
+  color: $highlight-color !important;
 }
 
 .text-color-main {
   background-image: linear-gradient(135deg, $primary-color 0%, $secondary-color 100%);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 
@@ -51,5 +53,22 @@ a:hover {
 
   &:hover {
     transform: translateX(2px);
+  }
+}
+
+.footnote {
+  width: 70%;
+  margin-top: 1em;
+  text-align: left;
+  margin-bottom: 1em;
+
+  @include respond(tab-land) {
+    margin-top: -3.8rem;
+    margin-bottom: 4.8rem;
+  }
+
+  @include respond(phone) {
+    margin-top: -1.5rem;
+    margin-bottom: 2.5rem;
   }
 }

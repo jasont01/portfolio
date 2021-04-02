@@ -17,7 +17,7 @@ const Skills = () => {
             {skills.map((skill) => {
               const { id, name, icon } = skill;
               return (
-                <Flip left cascade delay={2000}>
+                <Flip left cascade delay={1000}>
                   <div key={id} className='skill_item'>
                     <img src={`/icons/${icon}`} alt={name} />
                     <h2 className='skill_name'>{name}</h2>
