@@ -6,28 +6,25 @@ import PortfolioContext from '../context';
 
 const Hero = ({ isDesktop }) => {
   const { hero } = useContext(PortfolioContext);
-  const { title, name, subtitle } = hero;
+  const { title, firstName, lastName, subtitle } = hero;
 
   return (
     <section id='hero' className='jumbotron'>
       <Container>
-        <Fade
-          left={isDesktop}
-          bottom={!isDesktop}
-          duration={1000}
-          delay={500}
-          distance='30px'
-        >
-          <h1 className='hero-title'>
-            {title || 'Hi, my name is'}{' '}
-            <span className='text-color-main'>{name || 'Your Name'}</span>
-            <br />
-            {subtitle || "I'm the Unknown Developer."}
-          </h1>
-        </Fade>
+        <div className='hero-title'>
+          <Fade left duration={1200} delay={500} distance='30px'>
+            <span className='first-name'>Jason</span>
+          </Fade>
+          <Fade bottom duration={1200} delay={500} distance='30px'>
+            <span className='last-name'>Thompson</span>
+          </Fade>
+          <Fade duration={1000} delay={2000}>
+            <div className='hero-border'></div>
+          </Fade>
+        </div>
       </Container>
       <div className='scroll-wrapper'>
-        <Fade bottom={true} duration={1000} delay={800} distance='30px'>
+        <Fade duration={200} delay={3800}>
           <Link to='about' smooth duration={1000}>
             <div className='box'>
               <span></span>
