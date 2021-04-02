@@ -21,13 +21,13 @@
       @content;
     } //0 - 600px
   }
-  // Table Portrait
+  // Tablet Portrait
   @if $breakpoint == tab-port {
-    @media (max-width: 56.25em) {
+    @media (max-width: 991px) {
       @content;
-    } //900px
+    } //991px
   }
-  // Table Landscape
+  // Tablet Landscape
   @if $breakpoint == tab-land {
     @media (max-width: 75em) {
       @content;
