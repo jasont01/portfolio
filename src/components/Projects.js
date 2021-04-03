@@ -14,7 +14,17 @@ const Projects = ({ isDesktop }) => {
         <div className='project-wrapper'>
           <Title title='Projects' />
           {projects.map((project, idx) => {
-            const { title, info, info2, url, repo, img, id, footnote } = project;
+            const {
+              id,
+              title,
+              info,
+              info2,
+              url,
+              repo,
+              img,
+              skillTags,
+              footnote,
+            } = project;
             const direction = idx % 2 ? 'row-reverse' : 'unset';
             return (
               <Row key={id} style={{ flexDirection: direction }}>
@@ -30,6 +40,16 @@ const Projects = ({ isDesktop }) => {
                       <h3 className='project-wrapper__text-title'>
                         {title || 'Project Title'}
                       </h3>
+                      <div className='skill-tags'>
+                        {skillTags.map((tag) => {
+                          return (
+                            <div key={tag.id} className='skill-tag'>
+                              <span className='tag-icon'>{tag.icon}</span>
+                              <span className='tag-name'>{tag.name}</span>
+                            </div>
+                          );
+                        })}
+                      </div>
                       <div>
                         <p>
                           {info ||
@@ -57,7 +77,7 @@ const Projects = ({ isDesktop }) => {
                         </a>
                       )}
                     </div>
-                    {footnote && <div className="footnote">{footnote}</div>}
+                    {footnote && <div className='footnote'>{footnote}</div>}
                   </Fade>
                 </Col>
                 <Col lg={8} sm={12}>

@@ -43,7 +43,11 @@ a:hover {
 }
 
 .text-color-main {
-  background-image: linear-gradient(135deg, $primary-color 0%, $secondary-color 100%);
+  background-image: linear-gradient(
+    135deg,
+    $primary-color 0%,
+    $secondary-color 100%
+  );
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -78,13 +82,13 @@ a:hover {
 
 .contact-email {
   font-family: 'Amatic SC', cursive;
-  font-size: 3em!important;
+  font-size: 3em !important;
   color: inherit;
   &:hover {
     color: $highlight-color;
   }
   @include respond(phone) {
-    font-size: 2.5em!important;
+    font-size: 2.5em !important;
   }
 }
 
@@ -93,4 +97,36 @@ a:hover {
   letter-spacing: 8px;
   font-weight: 800;
   text-transform: uppercase;
+}
+
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+
+  .skill-tag {
+    display: flex;
+    align-items: center;
+    color: #1b1b1b;
+    background: cornsilk;
+    width: fit-content;
+    padding: 3px 6px;
+    border-radius: 8px;
+    margin-right: 6px;
+    margin-bottom: 10px;
+    box-shadow: inset -5px 5px 10px #666358, inset 5px -5px 10px #ffffff;
+
+    .tag-icon {
+      svg {
+        width: 16px;
+        height: 16px;
+      }
+    }
+
+    .tag-name {
+      font-family: 'Source Code Pro', monospace;
+      font-size: 12px;
+      margin-left: 6px;
+    }
+  }
 }
