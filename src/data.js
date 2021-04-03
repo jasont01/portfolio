@@ -119,9 +119,9 @@ export const projectsData = [
 
 // CONTACT DATA
 export const contactData = {
-  cta: '',
+  cta: 'Write me an e-mail at:',
   btn: '',
-  email: 'jason@jasont.us',
+  email: 'contact@jasont.us',
 };
 
 // FOOTER DATA

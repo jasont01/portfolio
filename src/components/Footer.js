@@ -1,6 +1,7 @@
 import React, { useContext } from 'react';
 import { Container } from 'react-bootstrap';
 import { Link } from 'react-scroll';
+import Flip from 'react-reveal/Flip';
 import PortfolioContext from '../context';
 
 const Footer = () => {
@@ -33,9 +34,20 @@ const Footer = () => {
             })}
         </div>
         <hr />
-        <p className="footer__text">
-          © {new Date().getFullYear()} - {' '}
-          <a href="https://github.com/jasont01" target="_blank" rel="noopener noreferrer">
+        <Flip>
+          <div className='logo'>
+            <span className='first'>J</span>
+            <span className='last'>T</span>
+            <div className='logo-border'></div>
+          </div>
+        </Flip>
+        <p className='footer__text'>
+          © {new Date().getFullYear()} -{' '}
+          <a
+            href='https://github.com/jasont01'
+            target='_blank'
+            rel='noopener noreferrer'
+          >
             Jason Thompson
           </a>
         </p>

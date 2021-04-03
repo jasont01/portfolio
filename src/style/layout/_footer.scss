@@ -1,7 +1,7 @@
 .footer {
   background-color: $black-color;
   color: $white-color;
-  padding: 4.8rem 0;
+  padding: 2rem 0;
 
   @include respond(phone) {
     border: 0px;
@@ -72,5 +72,36 @@
 
   &:hover {
     transform: translateY(-2px);
+  }
+}
+
+.logo {
+  font-size: 5.6rem;
+  font-weight: 700;
+  color: cornsilk;
+  width: 1em;
+  margin: auto;
+  margin-bottom: 1.5rem;
+  text-align: left;
+  position: relative;
+  
+  .first {
+    color: #bada55;
+    position: relative;
+    z-index: 2;
+  }
+  .last {
+    position: absolute;
+    z-index: 1;
+    left: 1.5rem;
+    top: 1rem;
+  }
+  &-border {
+    border: 3px solid cornsilk;
+    height: 1.4em;
+    width: 1.3em;
+    position: absolute;
+    left: -.2em;
+    top: .6rem;
   }
 }

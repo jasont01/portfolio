@@ -17,7 +17,7 @@ const About = ({ isDesktop }) => {
           <Col md={6} sm={12}>
             <Fade bottom duration={1000} delay={600} distance='30px'>
               <div className='about-wrapper__image'>
-                <StaticImage src={`../images/profile.jpg`} width={350} alt="profile" />
+                <StaticImage src={`../images/profile.jpg`} width={350} alt="profile" className="profile-img"/>
               </div>
             </Fade>
           </Col>
