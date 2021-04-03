@@ -1,8 +1,8 @@
 import React, { useContext } from 'react';
 import { Container } from 'react-bootstrap';
 import Fade from 'react-reveal/Fade';
-import { Link } from 'react-scroll';
 import PortfolioContext from '../context';
+import ScrollDown from './ScrollDown';
 
 const Hero = () => {
   const { hero } = useContext(PortfolioContext);
@@ -23,17 +23,9 @@ const Hero = () => {
           </Fade>
         </div>
       </Container>
-      <div className='scroll-wrapper'>
-        <Fade duration={200} delay={3800}>
-          <Link to='about' smooth duration={1000}>
-            <div className='box'>
-              <span></span>
-              <span></span>
-              <span></span>
-            </div>
-          </Link>
-        </Fade>
-      </div>
+      <Fade duration={200} delay={3800}>
+          <ScrollDown to='about' />
+      </Fade>
     </section>
   );
 };

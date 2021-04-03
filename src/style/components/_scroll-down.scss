@@ -2,6 +2,10 @@
   position: absolute;
   bottom: 5em;
   right: 50%;
+
+  &.hidden {
+    display: none;
+  }
 }
 
 .box {
