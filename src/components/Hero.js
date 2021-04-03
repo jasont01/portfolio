@@ -23,9 +23,11 @@ const Hero = () => {
           </Fade>
         </div>
       </Container>
-      <Fade duration={200} delay={3800}>
+      <div id='scroll' className='scroll-wrapper'>
+        <Fade duration={200} delay={3800}>
           <ScrollDown to='about' />
-      </Fade>
+        </Fade>
+      </div>
     </section>
   );
 };

@@ -14,15 +14,13 @@ const ScrollDown = ({ to }) => {
   }, []);
 
   return (
-    <div id='scroll' className='scroll-wrapper'>
-      <Link to={to} smooth duration={1000}>
-        <div className='box'>
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-      </Link>
-    </div>
+    <Link to={to} smooth duration={1000}>
+      <div className='box'>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </Link>
   );
 };
 
