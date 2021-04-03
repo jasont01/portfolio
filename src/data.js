@@ -103,7 +103,7 @@ export const projectsData = [
     info2: '',
     url: 'https://odin-fauxbook.herokuapp.com/',
     repo: 'https://github.com/jasont01/odin-facebook',
-    footnote: 'may take a moment to load. hosted on heroku using their hobby plan',
+    footnote: 'May take a moment to load. Hosted on heroku using their hobby plan',
   },
   {
     id: nanoid(),
@@ -113,7 +113,7 @@ export const projectsData = [
     info2: 'Created with Ruby on Rails',
     url: 'https://odin-airlines.herokuapp.com/',
     repo: 'https://github.com/jasont01/odin-flight-booker',
-    footnote: 'may take a moment to load. hosted on heroku using their hobby plan',
+    footnote: 'May take a moment to load. Hosted on heroku using their hobby plan',
   },
 ];
 

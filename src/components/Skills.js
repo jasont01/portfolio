@@ -17,12 +17,14 @@ const Skills = () => {
             {skills.map((skill) => {
               const { id, name, icon } = skill;
               return (
-                <Flip left cascade delay={1000}>
-                  <div key={id} className='skill_item'>
-                    <img src={`/icons/${icon}`} alt={name} />
-                    <h2 className='skill_name'>{name}</h2>
-                  </div>
-                </Flip>
+                <div key={id} className='skill_item'>
+                  <Flip left cascade delay={1000}>
+                    <div className='skill_item_inner_wrapper'>
+                      <img src={`/icons/${icon}`} alt={name} />
+                      <h4 className='skill_name'>{name}</h4>
+                    </div>
+                  </Flip>
+                </div>
               );
             })}
           </div>
