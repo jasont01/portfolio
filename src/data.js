@@ -1,5 +1,34 @@
 import { nanoid } from 'nanoid';
 
+// ICON IMPORTS
+// https://react-icons.github.io/react-icons
+
+// Font Awsome
+import {
+  FaHtml5,
+  FaSass,
+  FaReact,
+  FaNodeJs,
+  FaGitAlt,
+  FaGithub,
+  FaLinux,
+  FaBootstrap,
+  FaFacebook,
+  FaDatabase,
+} from 'react-icons/fa';
+
+// Simple Icons
+import {
+  SiCss3,
+  SiJavascript,
+  SiNextDotJs,
+  SiStyledComponents,
+  SiRuby,
+  SiRails,
+  SiJest,
+  SiWebpack,
+} from 'react-icons/si';
+
 // HERO DATA
 export const heroData = {
   title: '',
@@ -20,56 +49,76 @@ export const aboutData = {
 
 // SKILLS
 export const skillsData = [
-  { id: nanoid(), name: 'HTML', icon: 'icon_html.svg' },
+  { id: nanoid(), name: 'HTML', icon: FaHtml5() },
   {
     id: nanoid(),
     name: 'CSS',
-    icon: 'icon_css.svg',
+    icon: SiCss3(),
   },
   {
     id: nanoid(),
     name: 'SASS',
-    icon: 'icon_sass.svg',
+    icon: FaSass(),
   },
   {
     id: nanoid(),
     name: 'JavaScript',
-    icon: 'icon_javascript.svg',
+    icon: SiJavascript(),
   },
   {
     id: nanoid(),
     name: 'React',
-    icon: 'icon_react.svg',
+    icon: FaReact(),
   },
   {
     id: nanoid(),
     name: 'NextJS',
-    icon: 'icon_next.svg',
+    icon: SiNextDotJs(),
+  },
+  {
+    id: nanoid(),
+    name: 'Bootstrap',
+    icon: FaBootstrap(),
   },
   {
     id: nanoid(),
     name: 'Styled Components',
-    icon: 'icon_styledComponents.svg',
+    icon: SiStyledComponents(),
   },
   {
     id: nanoid(),
     name: 'NodeJS',
-    icon: 'icon_nodejs.svg',
+    icon: FaNodeJs(),
+  },
+  {
+    id: nanoid(),
+    name: 'Jest',
+    icon: SiJest(),
   },
   {
     id: nanoid(),
     name: 'Git',
-    icon: 'icon_git.svg',
+    icon: FaGitAlt(),
   },
   {
     id: nanoid(),
     name: 'GitHub',
-    icon: 'icon_github.svg',
+    icon: FaGithub(),
   },
   {
     id: nanoid(),
     name: 'Linux',
-    icon: 'icon_linux.svg',
+    icon: FaLinux(),
+  },
+  {
+    id: nanoid(),
+    name: 'Ruby',
+    icon: SiRuby(),
+  },
+  {
+    id: nanoid(),
+    name: 'Rails',
+    icon: SiRails(),
   },
 ];
 
@@ -83,16 +132,38 @@ export const projectsData = [
     info2: 'Inspired by the background picture found on unsplash',
     url: 'https://jasont01.github.io/todo-list',
     repo: 'https://github.com/jasont01/todo-list', // if no repo, the button will not show up
+    skillTags: [
+      {
+        id: nanoid(),
+        name: 'javascript',
+        icon: SiJavascript(),
+      },
+      {
+        id: nanoid(),
+        name: 'sass',
+        icon: FaSass(),
+      },
+      {
+        id: nanoid(),
+        name: 'webpack',
+        icon: SiWebpack(),
+      },
+    ],
     footnote: '',
   },
   {
     id: nanoid(),
     img: 'memory-game.png',
     title: 'Memory Game',
-    info: 'A simple memory based game',
-    info2: '',
+    info: 'A simple memory game with a CriticalRole theme',
+    info2:
+      "The cards shuffle when you click on one. Get points for clicking on a card, but don't click the same card twice!",
     url: 'https://jasont01.github.io/memory-game/',
     repo: 'https://github.com/jasont01/memory-game',
+    skillTags: [
+      { id: nanoid(), name: 'react', icon: FaReact() },
+      { id: nanoid(), name: 'sass', icon: FaSass() },
+    ],
     footnote: '',
   },
   {
@@ -103,17 +174,66 @@ export const projectsData = [
     info2: '',
     url: 'https://odin-fauxbook.herokuapp.com/',
     repo: 'https://github.com/jasont01/odin-facebook',
-    footnote: 'May take a moment to load. Hosted on heroku using their hobby plan',
+    skillTags: [
+      {
+        id: nanoid(),
+        name: 'ruby',
+        icon: SiRuby(),
+      },
+      {
+        id: nanoid(),
+        name: 'rails',
+        icon: SiRails(),
+      },
+      {
+        id: nanoid(),
+        name: 'database',
+        icon: FaDatabase(),
+      },
+      {
+        id: nanoid(),
+        name: 'bootstrap',
+        icon: FaBootstrap(),
+      },
+      {
+        id: nanoid(),
+        name: 'facebook-api',
+        icon: FaFacebook(),
+      },
+    ],
+    footnote: "May take a moment to load. Hosted with heroku's hobby plan",
   },
   {
     id: nanoid(),
     img: 'odin-airlines.png',
     title: 'Odin Airlines',
     info: 'A mock flight booking app',
-    info2: 'Created with Ruby on Rails',
+    info2: 'Where would you like to go?',
     url: 'https://odin-airlines.herokuapp.com/',
     repo: 'https://github.com/jasont01/odin-flight-booker',
-    footnote: 'May take a moment to load. Hosted on heroku using their hobby plan',
+    skillTags: [
+      {
+        id: nanoid(),
+        name: 'ruby',
+        icon: SiRuby(),
+      },
+      {
+        id: nanoid(),
+        name: 'rails',
+        icon: SiRails(),
+      },
+      {
+        id: nanoid(),
+        name: 'database',
+        icon: FaDatabase(),
+      },
+      {
+        id: nanoid(),
+        name: 'bootstrap',
+        icon: FaBootstrap(),
+      },
+    ],
+    footnote: "May take a moment to load. Hosted with heroku's hobby plan",
   },
 ];
 
