@@ -42,14 +42,15 @@ const Footer = () => {
           </div>
         </Flip>
         <p className='footer__text'>
-          © {new Date().getFullYear()} -{' '}
+          © {new Date().getFullYear()}{' '}
           <a
             href='https://github.com/jasont01'
             target='_blank'
             rel='noopener noreferrer'
           >
             Jason Thompson
-          </a>
+          </a><br/>
+          All rights reserved
         </p>
       </Container>
     </footer>
