@@ -41,14 +41,27 @@ export const heroData = {
 // ABOUT DATA
 export const aboutData = {
   img: 'profile.jpg',
-  paragraphOne: '',
-  paragraphTwo: '',
-  paragraphThree: '',
+  paragraphOne:
+    'I am an aspiring, self-taught front-end developer who is passionate about web development and software engineering.',
+  paragraphTwo:
+    'I create dynamic applications and sites and enjoy solving complex problems by coming up with intuitive & elegant solutions.',
+  paragraphThree:
+    'I am well-organized, results-driven and interested in working on ambitious projects with creative people.',
   resume: '', // if no resume, the button will not show up
 };
 
 // SKILLS
 export const skillsData = [
+  {
+    id: nanoid(),
+    name: 'React',
+    icon: FaReact(),
+  },
+  {
+    id: nanoid(),
+    name: 'JavaScript',
+    icon: SiJavascript(),
+  },
   { id: nanoid(), name: 'HTML', icon: FaHtml5() },
   {
     id: nanoid(),
@@ -59,16 +72,6 @@ export const skillsData = [
     id: nanoid(),
     name: 'SASS',
     icon: FaSass(),
-  },
-  {
-    id: nanoid(),
-    name: 'JavaScript',
-    icon: SiJavascript(),
-  },
-  {
-    id: nanoid(),
-    name: 'React',
-    icon: FaReact(),
   },
   {
     id: nanoid(),

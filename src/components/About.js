@@ -1,9 +1,10 @@
 import React, { useContext } from 'react';
-import Fade from 'react-reveal/Fade';
 import { Container, Row, Col } from 'react-bootstrap';
-import Title from './Title';
-import { StaticImage } from 'gatsby-plugin-image'
+import { StaticImage } from 'gatsby-plugin-image';
 import PortfolioContext from '../context';
+import { Link } from 'react-scroll';
+import Fade from 'react-reveal/Fade';
+import Title from './Title';
 
 const About = ({ isDesktop }) => {
   const { about } = useContext(PortfolioContext);
@@ -17,7 +18,12 @@ const About = ({ isDesktop }) => {
           <Col md={6} sm={12}>
             <Fade bottom duration={1000} delay={600} distance='30px'>
               <div className='about-wrapper__image'>
-                <StaticImage src={`../images/profile.jpg`} width={350} alt="profile" className="profile-img"/>
+                <StaticImage
+                  src={`../images/profile.jpg`}
+                  width={350}
+                  alt='profile'
+                  className='profile-img'
+                />
               </div>
             </Fade>
           </Col>
@@ -38,22 +44,29 @@ const About = ({ isDesktop }) => {
                   {paragraphTwo ||
                     'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi neque, ipsa animi maiores repellendu distinctioaperiam earum dolor voluptatum consequatur blanditiis inventore debitis fuga numquam voluptate architecto itaque molestiae.'}
                 </p>
-                <p className='about-wrapper__info-text'>
-                  {paragraphThree ||
-                    'Lorem ipsum dolor sit, amet consectetur adipisicing elit.'}
-                </p>
-                {resume && (
-                  <span className='d-flex mt-3'>
+                {paragraphThree && (
+                  <p className='about-wrapper__info-text'>{paragraphThree}</p>
+                )}
+                <span className='d-flex mt-3'>
+                  {resume && (
                     <a
                       target='_blank'
                       rel='noopener noreferrer'
-                      className='cta-btn cta-btn--resume'
+                      className='cta-btn mr-3'
                       href={resume}
                     >
-                      Resume
+                      Résumé
                     </a>
-                  </span>
-                )}
+                  )}
+                  <Link
+                    to={'contact'}
+                    smooth
+                    duration={1000}
+                    className='cta-btn'
+                  >
+                    Contact
+                  </Link>
+                </span>
               </div>
             </Fade>
           </Col>
