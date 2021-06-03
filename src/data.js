@@ -26,7 +26,8 @@ import {
   SiRuby,
   SiRails,
   SiJest,
-  SiWebpack,
+  SiMaterialUi,
+  SiFirebase,
 } from 'react-icons/si';
 
 // HERO DATA
@@ -59,6 +60,26 @@ export const skillsData = [
   },
   {
     id: nanoid(),
+    name: 'NextJS',
+    icon: SiNextDotJs(),
+  },
+  {
+    id: nanoid(),
+    name: 'NodeJS',
+    icon: FaNodeJs(),
+  },
+  {
+    id: nanoid(),
+    name: 'Git',
+    icon: FaGitAlt(),
+  },
+  {
+    id: nanoid(),
+    name: 'GitHub',
+    icon: FaGithub(),
+  },
+  {
+    id: nanoid(),
     name: 'JavaScript',
     icon: SiJavascript(),
   },
@@ -73,11 +94,7 @@ export const skillsData = [
     name: 'SASS',
     icon: FaSass(),
   },
-  {
-    id: nanoid(),
-    name: 'NextJS',
-    icon: SiNextDotJs(),
-  },
+  { id: nanoid(), name: 'Material-UI', icon: SiMaterialUi() },
   {
     id: nanoid(),
     name: 'Bootstrap',
@@ -90,8 +107,13 @@ export const skillsData = [
   },
   {
     id: nanoid(),
-    name: 'NodeJS',
-    icon: FaNodeJs(),
+    name: 'Ruby',
+    icon: SiRuby(),
+  },
+  {
+    id: nanoid(),
+    name: 'Rails',
+    icon: SiRails(),
   },
   {
     id: nanoid(),
@@ -100,28 +122,8 @@ export const skillsData = [
   },
   {
     id: nanoid(),
-    name: 'Git',
-    icon: FaGitAlt(),
-  },
-  {
-    id: nanoid(),
-    name: 'GitHub',
-    icon: FaGithub(),
-  },
-  {
-    id: nanoid(),
     name: 'Linux',
     icon: FaLinux(),
-  },
-  {
-    id: nanoid(),
-    name: 'Ruby',
-    icon: SiRuby(),
-  },
-  {
-    id: nanoid(),
-    name: 'Rails',
-    icon: SiRails(),
   },
 ];
 
@@ -138,18 +140,18 @@ export const projectsData = [
     skillTags: [
       {
         id: nanoid(),
-        name: 'javascript',
-        icon: SiJavascript(),
+        name: 'react',
+        icon: FaReact(),
       },
       {
         id: nanoid(),
-        name: 'sass',
-        icon: FaSass(),
+        name: 'node',
+        icon: FaNodeJs(),
       },
       {
         id: nanoid(),
-        name: 'webpack',
-        icon: SiWebpack(),
+        name: 'firebase',
+        icon: SiFirebase(),
       },
     ],
     footnote: '',
