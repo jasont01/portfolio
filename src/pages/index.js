@@ -1,13 +1,15 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Helmet } from 'react-helmet';
 import ReactGA from 'react-ga';
 import '../style/index.scss';
 import App from '../components/App';
 
-ReactGA.initialize(process.env.UA);
-ReactGA.pageview(window.location.pathname + window.location.search);
+const Portfolio = () => {
+  useEffect(() => {
+    ReactGA.initialize(process.env.UA);
+    ReactGA.pageview(window.location.pathname + window.location.search);
+  }, []);
 
-const portfolio = () => {
   return (
     <>
       <Helmet>
@@ -21,4 +23,4 @@ const portfolio = () => {
   );
 };
 
-export default portfolio;
+export default Portfolio;
