@@ -1,15 +1,9 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { Helmet } from 'react-helmet';
-import ReactGA from 'react-ga';
 import '../style/index.scss';
 import App from '../components/App';
 
 const Portfolio = () => {
-  useEffect(() => {
-    ReactGA.initialize(process.env.UA);
-    ReactGA.pageview(window.location.pathname + window.location.search);
-  }, []);
-
   return (
     <>
       <Helmet>
