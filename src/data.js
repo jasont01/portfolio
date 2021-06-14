@@ -48,7 +48,7 @@ export const aboutData = {
     'I create dynamic applications and sites and enjoy solving complex problems by coming up with intuitive & elegant solutions.',
   paragraphThree:
     'I am well-organized, results-driven and interested in working on ambitious projects with creative people.',
-  resume: '', // if no resume, the button will not show up
+  resume: 'https://jasont-resume.netlify.app/', // if no resume, the button will not show up
 };
 
 // SKILLS
