@@ -27,7 +27,6 @@ import {
   SiRails,
   SiJest,
   SiMaterialUi,
-  SiFirebase,
 } from 'react-icons/si'
 
 // HERO DATA
@@ -131,6 +130,33 @@ export const skillsData = [
 export const projectsData = [
   {
     id: nanoid(),
+    img: '',
+    title: 'Notes App',
+    info: 'A simple web app for notes',
+    info2: 'Full stack app utilizing React, ExpressJS, and MongoDB',
+    url: 'https://web-notes.netlify.app',
+    repo: 'https://github.com/jasont01/notes', // if no repo, the button will not show up
+    skillTags: [
+      {
+        id: nanoid(),
+        name: 'react',
+        icon: FaReact(),
+      },
+      {
+        id: nanoid(),
+        name: 'node',
+        icon: FaNodeJs(),
+      },
+      {
+        id: nanoid(),
+        name: 'material-ui',
+        icon: SiMaterialUi(),
+      },
+    ],
+    footnote: '',
+  },
+  {
+    id: nanoid(),
     img: 'todo-list.png',
     title: 'To-Do List',
     info: 'The ubiquitous javascript app',
@@ -148,13 +174,8 @@ export const projectsData = [
         name: 'node',
         icon: FaNodeJs(),
       },
-      {
-        id: nanoid(),
-        name: 'firebase',
-        icon: SiFirebase(),
-      },
     ],
-    footnote: '',
+    footnote: '*Desktop Only',
   },
   {
     id: nanoid(),
