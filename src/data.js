@@ -25,7 +25,6 @@ import {
   SiStyledComponents,
   SiRuby,
   SiRails,
-  SiJest,
   SiMaterialUi,
 } from 'react-icons/si'
 
@@ -113,11 +112,6 @@ export const skillsData = [
     id: nanoid(),
     name: 'Rails',
     icon: SiRails(),
-  },
-  {
-    id: nanoid(),
-    name: 'Jest',
-    icon: SiJest(),
   },
   {
     id: nanoid(),
