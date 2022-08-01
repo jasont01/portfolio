@@ -124,7 +124,7 @@ export const skillsData = [
 export const projectsData = [
   {
     id: nanoid(),
-    img: '',
+    img: 'web-notes.png',
     title: 'Notes App',
     info: 'A simple web app for notes',
     info2: 'Full stack app utilizing React, ExpressJS, and MongoDB',
