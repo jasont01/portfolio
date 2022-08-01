@@ -1,4 +1,4 @@
-import { nanoid } from 'nanoid';
+import { nanoid } from 'nanoid'
 
 // ICON IMPORTS
 // https://react-icons.github.io/react-icons
@@ -15,7 +15,7 @@ import {
   FaBootstrap,
   FaFacebook,
   FaDatabase,
-} from 'react-icons/fa';
+} from 'react-icons/fa'
 
 // Simple Icons
 import {
@@ -28,7 +28,7 @@ import {
   SiJest,
   SiMaterialUi,
   SiFirebase,
-} from 'react-icons/si';
+} from 'react-icons/si'
 
 // HERO DATA
 export const heroData = {
@@ -37,7 +37,7 @@ export const heroData = {
   lastName: 'Thompson',
   subtitle: '',
   cta: '',
-};
+}
 
 // ABOUT DATA
 export const aboutData = {
@@ -49,7 +49,7 @@ export const aboutData = {
   paragraphThree:
     'I am well-organized, results-driven and interested in working on ambitious projects with creative people.',
   resume: 'https://jasont-resume.netlify.app/', // if no resume, the button will not show up
-};
+}
 
 // SKILLS
 export const skillsData = [
@@ -125,7 +125,7 @@ export const skillsData = [
     name: 'Linux',
     icon: FaLinux(),
   },
-];
+]
 
 // PROJECTS DATA
 export const projectsData = [
@@ -135,7 +135,7 @@ export const projectsData = [
     title: 'To-Do List',
     info: 'The ubiquitous javascript app',
     info2: 'Inspired by the background picture found on unsplash',
-    url: 'https://jasont01.github.io/todo-list',
+    url: 'https://jasont-todo-list.netlify.app',
     repo: 'https://github.com/jasont01/todo-list', // if no repo, the button will not show up
     skillTags: [
       {
@@ -240,14 +240,14 @@ export const projectsData = [
     ],
     footnote: "May take a moment to load. Hosted with heroku's hobby plan",
   },
-];
+]
 
 // CONTACT DATA
 export const contactData = {
   cta: 'Write me an e-mail at:',
   btn: '',
   email: 'contact@jasont.us',
-};
+}
 
 // FOOTER DATA
 export const footerData = {
@@ -273,4 +273,4 @@ export const footerData = {
       url: 'https://twitter.com/jasont01',
     },
   ],
-};
+}
