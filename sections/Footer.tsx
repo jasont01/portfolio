@@ -73,7 +73,7 @@ const Footer: React.FC<Props> = ({ socials }) => {
         />
         <Box sx={{ padding: '1rem' }}>
           <Flip>
-            <Image src={logo} width={80} height={80} />
+            <Image src={logo} width={80} height={80} alt="logo" />
           </Flip>
         </Box>
         <Text align="center">© {new Date().getFullYear()} Jason Thompson</Text>

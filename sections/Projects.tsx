@@ -82,6 +82,7 @@ const Projects: React.FC<Props> = ({ projects }) => {
                 src={project.img}
                 width={600}
                 height={400}
+                alt={project.title}
               />
             </Fade>
           </Grid.Col>
