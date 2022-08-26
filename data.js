@@ -53,7 +53,7 @@ export const projects = [
     title: 'Notes App',
     img: projectImg.webnotes,
     desc: 'A simple MERN-stack app for notes',
-    url: 'https://web-notes.netlify.app',
+    url: 'https://webnotes.fly.dev',
     git: 'https://github.com/jasont01/notes',
     tags: [
       { name: 'react', icon: FaReact },
@@ -68,7 +68,7 @@ export const projects = [
     title: 'ToDo List',
     img: projectImg.todolist,
     desc: 'The ubiquitous javascript app. Inspired by the background picture found on unsplash',
-    url: 'https://jasont-todo-list.netlify.app',
+    url: 'https://todolist.fly.dev',
     git: 'https://github.com/jasont01/todo-list',
     tags: [
       { name: 'react', icon: FaReact },
@@ -103,30 +103,6 @@ export const projects = [
       { name: 'sass', icon: FaSass },
     ],
     footnote: '',
-  },
-  {
-    title: 'Fauxbook',
-    img: projectImg.fauxbook,
-    desc: 'A Facebook Clone',
-    url: 'https://odin-fauxbook.herokuapp.com/',
-    git: 'https://github.com/jasont01/odin-facebook',
-    tags: [
-      { name: 'ruby', icon: null },
-      { name: 'bootstrap', icon: FaBootstrap },
-    ],
-    footnote: "May take a moment to load. Hosted with heroku's free plan",
-  },
-  {
-    title: 'Odin Airlines',
-    img: projectImg.odinairlines,
-    desc: 'A mock flight booking app',
-    url: 'ttps://odin-airlines.herokuapp.com/',
-    git: 'https://github.com/jasont01/odin-flight-booker',
-    tags: [
-      { name: 'ruby', icon: null },
-      { name: 'bootstrap', icon: FaBootstrap },
-    ],
-    footnote: "May take a moment to load. Hosted with heroku's free plan",
   },
 ]
 
